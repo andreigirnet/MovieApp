@@ -43,8 +43,8 @@
                     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mt-4 gap-8">
                        @foreach($knownForMovies as $movie)
                             <div class="mt">
-                                <a href=""><img src="{{$movie['poster_path']}}" class="hover:opacity-75 transition ease-in-out duration-500 w-56" alt=""></a>
-                                <a href="" class="text-sm loading-normal block text-gray-400 hover:text-white mt-1" style="text-align: center">{{$movie['title']}}</a>
+                                <a href="{{$movie['linkToPage']}}"><img src="{{$movie['poster_path']}}" class="hover:opacity-75 transition ease-in-out duration-500 w-56" alt=""></a>
+                                <a href="{{$movie['linkToPage']}}" class="text-sm loading-normal block text-gray-400 hover:text-white mt-1" style="text-align: center">{{$movie['title']}}</a>
                             </div>
                         @endforeach
                     </div>
