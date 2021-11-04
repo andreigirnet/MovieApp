@@ -64,7 +64,7 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
             @foreach($movie['cast'] as $cast)
                 <div class="mt-8">
-                    <a href="#">
+                    <a href="{{route('actors.show', $cast['id'])}}">
                         <img src="{{'https://image.tmdb.org/t/p/w300/'.$cast['profile_path']}}" alt="parasite" class=" w-64 md:w-96 hover:opacity-75 transition duration-500 ease-in-out">
                     </a>
                     <div class="mt-2">
